@@ -2,8 +2,8 @@
 Análisis de datos sinteticos
 
 
-1. DESCARGAMOS LA CARPETA QUE ESTA SUBIDA EN EL GITHUB
-2. ABRIMOS LA CARPETA Y DAMOS CLICK DERECHO PARA ABRIR EL TERMINAL EN LA CARPETA
+1. Descargamos el archivo en el github y lo añadimos a una carpeta en el escritorio con un nombre de nuestro gusto.
+2. ABRIMOS LA CARPETA Y DAMOS CLICK DERECHO PARA ABRIR EL TERMINAL EN LA CARPETA.
    <img width="1244" height="653" alt="image" src="https://github.com/user-attachments/assets/bcd106cd-2242-4c33-b0a9-109314a87f17" />
 3. Descargamos la libreria necesaria para la version de python, en mi caso 3.13 
    py -3.13 -m pip install numpy pandas
