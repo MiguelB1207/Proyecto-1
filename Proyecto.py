@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 
-# ===============================================================
-# 1. Generar datos sintéticos
-# ===============================================================
+
+#Generar datos sintéticos
+
 # Simulamos 100 mediciones experimentales
 np.random.seed(0)  # para que los resultados sean replicables
 
@@ -18,20 +18,20 @@ np.savetxt("datos_sinteticos.csv", data, delimiter=",",
 
 print("✔ CSV sintético generado.")
 
-# ===============================================================
+
 # 2. Leer el CSV
-# ===============================================================
+
 df = pd.read_csv("datos_sinteticos.csv")
 print("✔ CSV leído correctamente.")
 
-# ===============================================================
+
 # 3. Calcular estadísticas por columna
-# ===============================================================
+
 stats = df.describe()
 
-# ===============================================================
+
 # 4. Filtrar outliers (valores > 3σ)
-# ===============================================================
+
 df_filtered = df.copy()
 
 for column in df.columns:
@@ -46,9 +46,9 @@ for column in df.columns:
 
 print("✔ Outliers eliminados.")
 
-# ===============================================================
+
 # 5. Guardar CSV limpio y reporte
-# ===============================================================
+
 df_filtered.to_csv("datos_filtrados.csv", index=False)
 
 with open("reporte.txt", "w") as f:
@@ -60,4 +60,5 @@ with open("reporte.txt", "w") as f:
     f.write("\nProceso completado exitosamente.\n")
 
 print("✔ Reporte generado y datos guardados.")
+
 
